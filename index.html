@@ -285,21 +285,40 @@ document.querySelectorAll("#mobile-menu a").forEach(link => {
     approach and evidence-based medicine.
   </p>
 
-  <div class="mt-10 flex flex-wrap gap-4">
+  <div class="mt-8 inline-flex items-center gap-2 bg-[#B68B40]/10 border border-[#B68B40]/20 rounded-full px-5 py-2">
+  <i class="fas fa-video text-[#B68B40]"></i>
+  <span class="text-sm font-medium text-gray-700">
+    Online Consultation Available
+  </span>
+</div>
 
-    <a href="#contact"
-       class="px-8 py-4 rounded-full bg-gradient-to-r from-[#B68B40] to-[#8B5E2C]
-       text-white font-semibold shadow-xl hover:scale-105 transition-all duration-300">
-      Book Appointment
-    </a>
+ <div class="mt-10 flex flex-wrap gap-4">
 
-    <a href="#services"
-       class="px-8 py-4 rounded-full border-2 border-[#B68B40]
-       text-[#B68B40] font-semibold hover:bg-[#B68B40] hover:text-white transition">
-      Explore Services
-    </a>
+  <!-- Appointment Button -->
+  <a href="#contact"
+     class="px-8 py-4 rounded-full bg-gradient-to-r from-[#B68B40] to-[#8B5E2C]
+     text-white font-semibold shadow-xl hover:scale-105 transition-all duration-300">
+    Book Appointment
+  </a>
 
-  </div>
+  <!-- Online Consultation Button -->
+  <a href="#contact"
+     class="px-8 py-4 rounded-full bg-white border border-[#E8D5A8]
+     text-[#B68B40] font-semibold shadow-lg hover:bg-[#B68B40]
+     hover:text-white hover:scale-105 transition-all duration-300">
+    <i class="fas fa-video mr-2"></i>
+    Online Consultation
+  </a>
+
+  <!-- Services Button -->
+  <a href="#services"
+     class="px-8 py-4 rounded-full border-2 border-[#B68B40]
+     text-[#B68B40] font-semibold hover:bg-[#B68B40]
+     hover:text-white transition-all duration-300">
+    Explore Services
+  </a>
+
+</div>
 
   <!-- Premium Stats -->
   <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
@@ -369,7 +388,11 @@ document.querySelectorAll("#mobile-menu a").forEach(link => {
 </div>
       </div>
     </div>
+
+    
   </section>
+  
+
   
 <!-- =========================
      ABOUT SECTION
@@ -390,15 +413,13 @@ document.querySelectorAll("#mobile-menu a").forEach(link => {
                 Expertise, Experience &
                 <span class="text-[#B8924A]">Excellence in Gastroenterology</span>
             </h2>
-
-            <p class="mt-8 text-lg md:text-xl text-slate-600 leading-relaxed">
-                Dr. Arun D. Solanki is a highly qualified Gastroenterologist with extensive
-                training in Internal Medicine and Medical Gastroenterology. His academic
-                journey includes MBBS from Seth G. S. Medical College, MD in General
-                Medicine from Government Medical College, Nagpur, and DM in Medical
-                Gastroenterology from Madras Medical College, Chennai.
-            </p>
-
+<p class="mt-8 text-lg md:text-xl text-slate-600 leading-relaxed text-center lg:text-left">
+    Dr. Arun D. Solanki is a highly qualified Gastroenterologist with extensive
+    training in Internal Medicine and Medical Gastroenterology. His academic
+    journey includes MBBS from Seth G. S. Medical College, MD in General
+    Medicine from Government Medical College, Nagpur, and DM in Medical
+    Gastroenterology from Madras Medical College, Chennai.
+</p>
         </div>
 
         <!-- Main Card -->
@@ -1075,7 +1096,6 @@ new Swiper(".luxuryTestimonial", {
 
 
 
-  <!-- Call to Action + Contact Form (Premium) - Contact number + email, appointment -->
 <!-- CONTACT SECTION -->
 <section id="contact" class="py-20 relative overflow-hidden bg-gradient-to-br from-[#2C3E2F] to-[#1F3122]">
 
@@ -1145,8 +1165,8 @@ new Swiper(".luxuryTestimonial", {
                 Clinic Location
               </h4>
               <p class="text-white/75 leading-relaxed">
-                Enter your clinic address here.<br>
-                Mumbai, Maharashtra, India
+                Zee Manubharti Building, C Wing, 2nd Floor Shop No - 208, Lallubhai Park Singal,
+                 Swami Vivekanand Rd, Zalawad Nagar,<br> Azad Nagar, Ganga Vihar, Andheri West, Mumbai, Maharashtra 400058
               </p>
             </div>
           </div>
@@ -1155,58 +1175,73 @@ new Swiper(".luxuryTestimonial", {
       </div>
 
       <!-- Form -->
-      <div
-        class="bg-white rounded-3xl shadow-2xl p-6 md:p-8"
-        data-aos="fade-left">
+     <div
+  class="bg-white rounded-3xl shadow-2xl p-6 md:p-8"
+  data-aos="fade-left">
 
-        <h3 class="text-2xl font-bold text-gray-800 mb-6">
-          Request a Callback
-        </h3>
+  <h3 class="text-2xl font-bold text-gray-800 mb-6">
+    Request a Callback
+  </h3>
 
-        <form>
+  <form>
 
-          <div class="mb-4">
-            <input
-              type="text"
-              placeholder="Full Name"
-              class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#B68B40]">
-          </div>
+    <!-- Full Name -->
+    <div class="mb-4">
+      <input
+        type="text"
+        placeholder="Full Name"
+        class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#B68B40]">
+    </div>
 
-          <div class="mb-4">
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#B68B40]">
-          </div>
+    <!-- Phone -->
+    <div class="mb-4">
+      <input
+        type="tel"
+        placeholder="Phone Number"
+        class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#B68B40]">
+    </div>
 
-          <div class="mb-4">
-            <input
-              type="email"
-              placeholder="Email Address"
-              class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#B68B40]">
-          </div>
+    <!-- Email -->
+    <div class="mb-4">
+      <input
+        type="email"
+        placeholder="Email Address"
+        class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#B68B40]">
+    </div>
 
-          <div class="mb-5">
-            <textarea
-              rows="4"
-              placeholder="Brief concern (optional)"
-              class="w-full px-4 py-3 border border-gray-200 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-[#B68B40]"></textarea>
-          </div>
+    <!-- Consultation Mode -->
+    <div class="mb-4">
+      <select
+        class="w-full px-4 py-3 border border-gray-200 rounded-xl bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#B68B40]">
+        <option selected disabled>Select Consultation Mode</option>
+        <option>Online Consultation</option>
+        <option>Offline Consultation</option>
+      </select>
+    </div>
 
-          <button
-            type="submit"
-            class="w-full bg-[#B68B40] hover:bg-[#9C6F32] text-white font-semibold py-3 rounded-xl transition flex items-center justify-center gap-2">
-            <i class="fas fa-paper-plane"></i>
-            Send Enquiry
-          </button>
+    <!-- Concern -->
+    <div class="mb-5">
+      <textarea
+        rows="4"
+        placeholder="Brief concern (optional)"
+        class="w-full px-4 py-3 border border-gray-200 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-[#B68B40]"></textarea>
+    </div>
 
-          <p class="text-xs text-gray-400 text-center mt-3">
-            We'll reach you within 24 hours.
-          </p>
+    <!-- Submit -->
+    <button
+      type="submit"
+      class="w-full bg-[#B68B40] hover:bg-[#9C6F32] text-white font-semibold py-3 rounded-xl transition flex items-center justify-center gap-2">
+      <i class="fas fa-paper-plane"></i>
+      Send Enquiry
+    </button>
 
-        </form>
+    <p class="text-xs text-gray-400 text-center mt-3">
+      We'll reach you within 24 hours.
+    </p>
 
-      </div>
+  </form>
+
+</div>
 
     </div>
 
@@ -1214,6 +1249,8 @@ new Swiper(".luxuryTestimonial", {
 
   </div>
 </section>
+
+
 
 <!-- FOOTER -->
 <footer class="bg-[#161616] text-white relative overflow-hidden">
